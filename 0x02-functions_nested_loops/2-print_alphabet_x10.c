@@ -1,23 +1,24 @@
 #include "main.h"
-#define MAX 26
 
 /**
-  *print_alphabet_x10 - prints alphabets 10 times
-  *
-  *Return: void
-  */
-
+ * print_alphabet_x10 - Make alphabet x10 times
+ *
+ * Return: void
+ */
 void print_alphabet_x10(void)
 {
-	int x,y;
-	char alp[26] = {"abcdefghijklmnopqrstuvwxyz"};
+	char c;
+	int i = 0;
 
-	for (x = 0; x < 10; x++)
+	while (i <= 9)
 	{
-		for (x = 0; y < 26; y++)
+		for (c = 'a'; c <= 'z'; c++)
 		{
-			_putchar(alp[y]);
+			_putchar(c);
 		}
-	_putchar('\n');
+
+		_putchar('\n');
+
+		i++;
 	}
 }

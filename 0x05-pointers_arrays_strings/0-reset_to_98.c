@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * reset to 98
- * update the value of the ariable ,the pointer points to 98
+ * reset_to_98 - updates the value of the variable,the pointer points to 98
  * @n: pointer to the variable to update
  */
 

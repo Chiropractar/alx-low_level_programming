@@ -2,19 +2,23 @@
 
 /**
  * string_toupper - changes all lowercase letters to uppercase
- * @s: string to change
+ * @p: The string all be modified
  *
- * Return: address of a
+ * Return: char var
  */
-char *string_toupper(char *s)
+char *string_toupper(char *p)
 {
-	int i = 0;
+	int a = 0;
 
-	while (*(s + i))
+	while (p[a])
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-			*(s + i) >= 'a' - 'A';
-		i++;
+		if (p[a] >= 97 && p[a] <= 122)
+		{
+			p[a] -= 32;
+		}
+
+		a++;
 	}
-	return (s);
+
+	return (p);
 }

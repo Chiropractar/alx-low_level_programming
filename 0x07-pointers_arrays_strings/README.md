@@ -1,1 +1,1 @@
-lets talk about pointers
+my first readme

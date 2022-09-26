@@ -5,15 +5,15 @@
  * @s: string to check
  * @c: character to check for
  *
- * Return: pointer to spot in a s with c or null
+ * Return: pointer to spot in s with c or null
  */
-char *strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int i;
 
 	for (i = 0; *(s + i); i++)
 	{
-		if (*(s + i) ==c)
+		if (*(s + i) == c)
 			return (s + i);
 	}
 	if (*(s + i) == c)
